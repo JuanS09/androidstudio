@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calcularActivity">
+
+    <TextView
+        android:id="@+id/txdatosprod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="36dp"
+        android:text="Datos del producto"
+        android:textColor="#FF1100"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txproducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="60dp"
+        android:text="Producto"
+        android:textColor="#062BFB"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txdatosprod" />
+
+    <TextView
+        android:id="@+id/txprecio"
+        android:layout_width="78dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="16dp"
+        android:text="Precio"
+        android:textColor="#0027FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/eprecio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txcateg" />
+
+    <TextView
+        android:id="@+id/txdetprod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="328dp"
+        android:text="Detalle de Pago"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txdatosprod" />
+
+    <TextView
+        android:id="@+id/txdescu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="108dp"
+        android:text="Descuento"
+        android:textColor="#0027FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txprecio" />
+
+    <TextView
+        android:id="@+id/txmonpag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:text="Monto a Pagar"
+        android:textColor="#0228FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txdescu" />
+
+    <Button
+        android:id="@+id/btcalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#5EAEA6"
+        android:text="Calcular"
+        android:textColor="#032AFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txmonpag" />
+
+    <EditText
+        android:id="@+id/eproduc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="alicol"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txproducto"
+        app:layout_constraintTop_toBottomOf="@+id/txdatosprod" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="48dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/txdetprod"
+        app:layout_constraintEnd_toStartOf="@+id/txprecio"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toEndOf="@+id/txcantidad"
+        app:layout_constraintTop_toBottomOf="@+id/ecantidad"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txcantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:text="Cantidad"
+        android:textColor="#0026F8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txproducto" />
+
+    <EditText
+        android:id="@+id/ecantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Antialergico"
+        app:layout_constraintStart_toEndOf="@+id/txcateg"
+        app:layout_constraintTop_toBottomOf="@+id/eproduc" />
+
+    <TextView
+        android:id="@+id/txcateg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif"
+        android:text="Categoria"
+        android:textColor="#0027FF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/txcantidad"
+        app:layout_constraintEnd_toStartOf="@+id/ecantidad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txproducto" />
+
+    <EditText
+        android:id="@+id/eprecio"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="90"
+        app:layout_constraintStart_toEndOf="@+id/txprecio"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/edescuento"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/txdescu"
+        app:layout_constraintTop_toBottomOf="@+id/txdetprod" />
+
+    <EditText
+        android:id="@+id/emonto"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/txmonpag"
+        app:layout_constraintTop_toBottomOf="@+id/edescuento"
+        tools:text="180" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
